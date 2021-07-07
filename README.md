@@ -6,7 +6,7 @@ This bot was inspired by the [Reddit GoodReads Bot](https://github.com/rodohanna
 
 ### NOTE THIS IS BASICALLY ALPHA SOFTWARE
 
-I wrote this in basically a night. It lacks tests. I'm a terrible Elixir developer. If this breaks then I am sorry. Feel free to post an issue.
+I wrote this in a night. It lacks tests. I'm a terrible Elixir developer If this breaks then I am sorry. Feel free to post an issue.
 
 ## [Add BookshelfBot to your Discord server](https://discord.com/api/oauth2/authorize?client_id=861069894648201228&permissions=2048&scope=bot%20applications.commands)
 
