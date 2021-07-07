@@ -4,18 +4,18 @@
 
 BookshelfBot is a Discord bot that fetches information for a book and then displays that information within a Discord message.
 
-This bot was inspired by the [Reddit GoodReads Bot](https://github.com/rodohanna/reddit-goodreads-bot) that I found out about through [/r/suggestmeabook](https://old.reddit.com/r/suggestmeabook/). Unfortunately, I cannot use GoodReads as they're deprecating their API so I use Google Books instead.
+This bot was inspired by the [Reddit GoodReads Bot](https://github.com/rodohanna/reddit-goodreads-bot) that I found out about through [/r/suggestmeabook](https://old.reddit.com/r/suggestmeabook/). Unfortunately, for this project, I cannot use GoodReads as they're deprecating their API so I use Google Books instead.
 
 ### NOTE THIS IS BASICALLY ALPHA SOFTWARE
 
-I wrote this in a night. It lacks tests. I'm a terrible Elixir developer If this breaks then I am sorry. Feel free to post an issue.
+I wrote this in a night. It lacks tests. I'm a terrible Elixir developer. If this breaks then I am sorry. Feel free to post an issue.
 
 ## [Add BookshelfBot to your Discord server](https://discord.com/api/oauth2/authorize?client_id=861069894648201228&permissions=2048&scope=bot%20applications.commands)
 
 ## Slash Commands
 
 `/info` - Displays information about the bot
-`/book <book_title>` - fetches information about a book using its title (this data comes from Google Books)
+`/book <book_title>` - Fetches information about a book using its title
 
 ## How it Works
 
