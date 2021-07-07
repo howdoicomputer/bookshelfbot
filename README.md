@@ -14,8 +14,8 @@ I wrote this in a night. It lacks tests. I'm a terrible Elixir developer. If thi
 
 ## Slash Commands
 
-`/info` - Displays information about the bot
-`/book <book_title>` - Fetches information about a book using its title
+- `/info` - Displays information about the bot
+- `/book <book_title>` - Fetches information about a book using its title
 
 ## How it Works
 
