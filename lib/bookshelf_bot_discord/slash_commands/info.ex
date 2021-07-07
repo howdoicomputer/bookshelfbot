@@ -20,6 +20,7 @@ defmodule BookshelfBotDiscord.SlashCommands.Info do
       |> put_field("Version", Application.spec(:bookshelfbot, :vsn) |> to_string(), true)
       |> put_field("Author", "Tyler Hampton", true)
       |> put_field("Uptime", uptime(), true)
+      |> put_field("Source code", "[GitHub](https://github.com/howdoicomputer/bookshelfbot)", true)
       |> put_field("Processes", "#{length(:erlang.processes())}", true)
       |> put_field("Memory Usage", "#{div(:erlang.memory(:total), 1_000_000)} MB", true)
 
