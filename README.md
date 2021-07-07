@@ -4,7 +4,7 @@
 
 BookshelfBot is a Discord bot that fetches information for a book and then displays that information within a Discord message.
 
-This bot was inspired by the [Reddit GoodReads Bot](https://github.com/rodohanna/reddit-goodreads-bot) that I found out about through [/r/suggestmeabook](https://old.reddit.com/r/suggestmeabook/). Unfortunately, for this project, I cannot use GoodReads as they're deprecating their API so I use Google Books instead.
+This bot was inspired by the [Reddit GoodReads Bot](https://github.com/rodohanna/reddit-goodreads-bot) that I found out about through [/r/suggestmeabook](https://old.reddit.com/r/suggestmeabook/). Unfortunately, for this project, I cannot use GoodReads as they're deprecating their API so I have used Google Books instead.
 
 ### NOTE THIS IS BASICALLY ALPHA SOFTWARE
 
