@@ -1,7 +1,7 @@
 import Config
 
 config :logger,
-  level: :debug,
+  level: :info,
   backends: [Ink]
 
 config :logger, Ink, name: "bookshelfbot"

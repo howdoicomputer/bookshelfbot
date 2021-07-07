@@ -19,14 +19,14 @@ defmodule BookshelfBotDiscord.SlashCommands do
     |> Enum.each(fn command ->
       if Application.fetch_env!(:bookshelfbot, :env) === :prod do
         case Api.create_global_application_command(command) do
-          {:ok, command} -> Logger.info("Created #{command.title} global command")
+          {:ok, command} -> Logger.info("Created #{command.name} global command")
           error -> Logger.error(error)
         end
       else
         case Application.fetch_env(:bookshelfbot, :test_guild_id) do
           {:ok, guild_id} ->
             case Api.create_guild_application_command(guild_id, command) do
-              {:ok, command} -> Logger.info("Created #{command.title} guild command")
+              {:ok, command} -> Logger.info("Created #{command.name} guild command")
               error -> Logger.error(error)
             end
           _ -> :noop

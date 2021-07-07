@@ -9,7 +9,7 @@ defmodule BookshelfBotDiscord.SlashCommands.Info do
   def get_command,
     do: %{
       name: "info",
-      description: "Information about the bot"
+      description: "Information about BookshelfBot"
     }
 
   @spec handle_interaction(Interaction.t()) :: map()
