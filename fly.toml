@@ -1,0 +1,12 @@
+# fly.toml file generated for bitter-rain-5587 on 2021-07-06T17:11:39-07:00
+
+app = "bitter-rain-5587"
+
+kill_signal = "SIGTERM"
+kill_timeout = 5
+
+[env]
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
