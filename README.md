@@ -25,13 +25,13 @@ The API wrapper for the Google Books service is in `lib/bookshelf_bot/google_boo
 
 The code that actually handles Discord events is defined in `lib/bookshelf_bot_discord`. The consumer's behavior is defined in `lib/bookshelf_bot_discord/consumer.ex` (see the `handle_event` function matches).
 
-The slash commands are defined individually in the `lib/bookshelf_bot_discord/slash_commands` and the code that pushes those commands to Discord as well as handle all incoming interactions with those commands are in `lib/bookshelf_bot_discord/slash_commands`. The book slash command caches API responses in accordance to the query string used to fetch them. So if someone searched for "Big Foot" as a book title then that string would be normalized to "big+foot" and then any returned book for that title would be stored in an in-memory cache so that subsequent API requests wouldn't have to be made.
+The slash commands are defined individually in the `lib/bookshelf_bot_discord/slash_commands` and the code that pushes those commands to Discord and handles incoming interactions for them are in `lib/bookshelf_bot_discord/slash_commands`. The book slash command caches API responses in accordance to the query string used to fetch them. So if someone searched for "Big Foot" as a book title then that string would be normalized to "big+foot" and then any returned book for that title would be stored in an in-memory cache to save subsequent API requests.
 
 ## TODO
 
 - I should probably add a `by <author>` feature for when two titles conflict.
-- The Google Books API actually returns a collection of books and the bot just grabs the first one. This works for now because Google is really good about approximating which book is the most correct. If this causes problems down the road, then I'll have to figure out something more advanced.
-- Typespecs are inconsistently applied throughout the project and Dialyzer isn't setup.
+- The Google Books API actually returns a collection of books and the bot just grabs the first one. This works for now because Google is just really good about approximating which book is the most correct. If this causes problems down the road, then I'll have to figure out something more advanced.
+- Typespecs are inconsistently applied throughout the project and Dialyzer isn't at all setup.
 - There are literally no tests.
 
 ## Installation
@@ -43,7 +43,7 @@ The slash commands are defined individually in the `lib/bookshelf_bot_discord/sl
 
 That's the basics on running the bot locally against a dev Discord server.
 
-The production deploy for this bot uses [fly.io]() as a host. It's a Heroku like PaaS that showed up on Hacker News once or twice so I checked them out. They have great documentation for onboarding an elixir application, have a really good free tier, and are super easy to use. The guide I used to deploy this application is [here](https://fly.io/docs/getting-started/elixir/#viewing-the-deployed-app) - it features deploying a Phoenix webapp but I found it easy enough to adapt.
+The production deploy for this bot uses [fly.io](https://fly.io/) as a host. It's a Heroku like PaaS that showed up on Hacker News once or twice so I checked them out on a whim. They have great documentation for onboarding an elixir application, have a really good free tier, and are super easy to use. The guide I used to deploy this application is [here](https://fly.io/docs/getting-started/elixir/#viewing-the-deployed-app) - it features a Phoenix webapp but I found that it was pretty easy to adapt.
 
 ## Resources
 
