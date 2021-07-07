@@ -24,7 +24,6 @@ defmodule BookshelfBot.MixProject do
       {:tesla, "~> 1.4.1"},
       {:hackney, "~> 1.17.4"},
       {:jason, "~> 1.2.2"},
-      {:ink, "~> 1.2.0"},
       {:cachex, "~> 3.4.0"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
