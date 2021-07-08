@@ -7,10 +7,10 @@ defmodule BookshelfBot.GoogleBooks do
   plug Tesla.Middleware.BaseUrl, "https://www.googleapis.com/books/v1"
   plug Tesla.Middleware.JSON
 
-  @spec query_book(String.t) :: Tesla.Env.result
   @doc """
   Queries a book based on title.
   """
+  @spec query_book(String.t) :: Tesla.Env.result
   def query_book(title) do
     get("/volumes", query: [q: String.replace(title, " ", "+")])
   end

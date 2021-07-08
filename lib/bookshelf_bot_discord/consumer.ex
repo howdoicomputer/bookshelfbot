@@ -1,4 +1,7 @@
 defmodule BookshelfBotDiscord.Consumer do
+  @moduledoc """
+  A Nostrum GenServer implementation that dispatches function calls according to incoming event type.
+  """
   use Nostrum.Consumer
 
   require Logger

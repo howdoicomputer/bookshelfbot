@@ -19,7 +19,7 @@ I wrote this in a night. It lacks tests. I'm a terrible Elixir developer. If thi
 
 ## How it Works
 
-The bot is an OTP application that has two child applications: a GenStage 'consumer' provided by the Nostrum library that will receive data from Discord and act on it, and a Cachex process that will help enable response caching for returned API responses from Google Books. You can see these both started as children in `lib/bookshelf_bot/application.ex`.
+The bot is an OTP application that has two child applications: a GenStage 'consumer' provided by the Nostrum library that will receive data from Discord and act on it and a Cachex process that caches Google Books API responses for better bot performance. You can see these both started as children in `lib/bookshelf_bot/application.ex`.
 
 The API wrapper for the Google Books service is in `lib/bookshelf_bot/google_books`. It is *very* simple and only wraps the `https://www.googleapis.com/books/v1/volumes` endpoint. This API wrapper is used by the main Discord consumer code to query for book information.
 
@@ -30,7 +30,7 @@ The slash commands are defined individually in the `lib/bookshelf_bot_discord/sl
 ## TODO
 
 - I should probably add a `by <author>` feature for when two titles conflict.
-- The Google Books API actually returns a collection of books and the bot just grabs the first one. This works for now because Google is just really good about approximating which book is the most correct. If this causes problems down the road, then I'll have to figure out something more advanced.
+- The Google Books API actually returns a collection of books and the bot just grabs the first one. This works for now because Google is just really good about approximating which book is the most correct. If this causes problems down the road then I'll have to figure out something more advanced.
 - Typespecs are inconsistently applied throughout the project and Dialyzer isn't at all setup.
 - There are literally no tests.
 
