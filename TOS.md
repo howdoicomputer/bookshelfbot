@@ -12,10 +12,10 @@ Definitions
 
 For the purposes of these Terms of Service:
 
-    Application means the software program provided by the Company added by You on any Discord guild, named JailBot
+    Application means the software program provided by the Company added by You on any Discord guild, named BookshelfBot
     Affiliate means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
     Country refers to: United States
-    Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to JailBot.
+    Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to BookshelfBot.
     Device means any device that can access the Service such as a computer, a cellphone or a digital tablet.
     Service refers to the Application.
     Terms of Service (also referred as "Terms") mean these Terms of Service that form the entire agreement between You and the Company regarding the use of the Service.
